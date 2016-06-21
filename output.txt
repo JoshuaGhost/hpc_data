@@ -1,0 +1,1554 @@
+1
+   =========================================
+   =      NAS Parallel Benchmarks 3.3      =
+   =      MPI/F77/C                        =
+   =========================================
+
+cd CG; make NPROCS=1 CLASS=S
+make[1]: Entering directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/CG'
+make[2]: Entering directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/sys'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/sys'
+../sys/setparams cg 1 S 
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 cg.f
+mpif77.mpich -O3 -mfloat-abi=hard -mfpu=vfpv4 -o ../bin/cg.S.1 cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o -lmpi
+make[1]: Leaving directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/CG'
+2
+   =========================================
+   =      NAS Parallel Benchmarks 3.3      =
+   =      MPI/F77/C                        =
+   =========================================
+
+cd CG; make NPROCS=2 CLASS=S
+make[1]: Entering directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/CG'
+make[2]: Entering directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/sys'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/sys'
+../sys/setparams cg 2 S 
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 cg.f
+mpif77.mpich -O3 -mfloat-abi=hard -mfpu=vfpv4 -o ../bin/cg.S.2 cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o -lmpi
+make[1]: Leaving directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/CG'
+4
+   =========================================
+   =      NAS Parallel Benchmarks 3.3      =
+   =      MPI/F77/C                        =
+   =========================================
+
+cd CG; make NPROCS=4 CLASS=S
+make[1]: Entering directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/CG'
+make[2]: Entering directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/sys'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/sys'
+../sys/setparams cg 4 S 
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 cg.f
+mpif77.mpich -O3 -mfloat-abi=hard -mfpu=vfpv4 -o ../bin/cg.S.4 cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o -lmpi
+make[1]: Leaving directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/CG'
+8
+   =========================================
+   =      NAS Parallel Benchmarks 3.3      =
+   =      MPI/F77/C                        =
+   =========================================
+
+cd CG; make NPROCS=8 CLASS=S
+make[1]: Entering directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/CG'
+make[2]: Entering directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/sys'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/sys'
+../sys/setparams cg 8 S 
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 cg.f
+mpif77.mpich -O3 -mfloat-abi=hard -mfpu=vfpv4 -o ../bin/cg.S.8 cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o -lmpi
+make[1]: Leaving directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/CG'
+1
+   =========================================
+   =      NAS Parallel Benchmarks 3.3      =
+   =      MPI/F77/C                        =
+   =========================================
+
+cd CG; make NPROCS=1 CLASS=W
+make[1]: Entering directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/CG'
+make[2]: Entering directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/sys'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/sys'
+../sys/setparams cg 1 W 
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 cg.f
+mpif77.mpich -O3 -mfloat-abi=hard -mfpu=vfpv4 -o ../bin/cg.W.1 cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o -lmpi
+make[1]: Leaving directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/CG'
+2
+   =========================================
+   =      NAS Parallel Benchmarks 3.3      =
+   =      MPI/F77/C                        =
+   =========================================
+
+cd CG; make NPROCS=2 CLASS=W
+make[1]: Entering directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/CG'
+make[2]: Entering directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/sys'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/sys'
+../sys/setparams cg 2 W 
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 cg.f
+mpif77.mpich -O3 -mfloat-abi=hard -mfpu=vfpv4 -o ../bin/cg.W.2 cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o -lmpi
+make[1]: Leaving directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/CG'
+4
+   =========================================
+   =      NAS Parallel Benchmarks 3.3      =
+   =      MPI/F77/C                        =
+   =========================================
+
+cd CG; make NPROCS=4 CLASS=W
+make[1]: Entering directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/CG'
+make[2]: Entering directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/sys'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/sys'
+../sys/setparams cg 4 W 
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 cg.f
+mpif77.mpich -O3 -mfloat-abi=hard -mfpu=vfpv4 -o ../bin/cg.W.4 cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o -lmpi
+make[1]: Leaving directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/CG'
+8
+   =========================================
+   =      NAS Parallel Benchmarks 3.3      =
+   =      MPI/F77/C                        =
+   =========================================
+
+cd CG; make NPROCS=8 CLASS=W
+make[1]: Entering directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/CG'
+make[2]: Entering directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/sys'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/sys'
+../sys/setparams cg 8 W 
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 cg.f
+mpif77.mpich -O3 -mfloat-abi=hard -mfpu=vfpv4 -o ../bin/cg.W.8 cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o -lmpi
+make[1]: Leaving directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/CG'
+1
+   =========================================
+   =      NAS Parallel Benchmarks 3.3      =
+   =      MPI/F77/C                        =
+   =========================================
+
+cd CG; make NPROCS=1 CLASS=A
+make[1]: Entering directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/CG'
+make[2]: Entering directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/sys'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/sys'
+../sys/setparams cg 1 A 
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 cg.f
+mpif77.mpich -O3 -mfloat-abi=hard -mfpu=vfpv4 -o ../bin/cg.A.1 cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o -lmpi
+make[1]: Leaving directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/CG'
+2
+   =========================================
+   =      NAS Parallel Benchmarks 3.3      =
+   =      MPI/F77/C                        =
+   =========================================
+
+cd CG; make NPROCS=2 CLASS=A
+make[1]: Entering directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/CG'
+make[2]: Entering directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/sys'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/sys'
+../sys/setparams cg 2 A 
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 cg.f
+mpif77.mpich -O3 -mfloat-abi=hard -mfpu=vfpv4 -o ../bin/cg.A.2 cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o -lmpi
+make[1]: Leaving directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/CG'
+4
+   =========================================
+   =      NAS Parallel Benchmarks 3.3      =
+   =      MPI/F77/C                        =
+   =========================================
+
+cd CG; make NPROCS=4 CLASS=A
+make[1]: Entering directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/CG'
+make[2]: Entering directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/sys'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/sys'
+../sys/setparams cg 4 A 
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 cg.f
+mpif77.mpich -O3 -mfloat-abi=hard -mfpu=vfpv4 -o ../bin/cg.A.4 cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o -lmpi
+make[1]: Leaving directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/CG'
+8
+   =========================================
+   =      NAS Parallel Benchmarks 3.3      =
+   =      MPI/F77/C                        =
+   =========================================
+
+cd CG; make NPROCS=8 CLASS=A
+make[1]: Entering directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/CG'
+make[2]: Entering directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/sys'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/sys'
+../sys/setparams cg 8 A 
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 cg.f
+mpif77.mpich -O3 -mfloat-abi=hard -mfpu=vfpv4 -o ../bin/cg.A.8 cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o -lmpi
+make[1]: Leaving directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/CG'
+1
+   =========================================
+   =      NAS Parallel Benchmarks 3.3      =
+   =      MPI/F77/C                        =
+   =========================================
+
+cd CG; make NPROCS=1 CLASS=B
+make[1]: Entering directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/CG'
+make[2]: Entering directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/sys'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/sys'
+../sys/setparams cg 1 B 
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 cg.f
+mpif77.mpich -O3 -mfloat-abi=hard -mfpu=vfpv4 -o ../bin/cg.B.1 cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o -lmpi
+make[1]: Leaving directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/CG'
+2
+   =========================================
+   =      NAS Parallel Benchmarks 3.3      =
+   =      MPI/F77/C                        =
+   =========================================
+
+cd CG; make NPROCS=2 CLASS=B
+make[1]: Entering directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/CG'
+make[2]: Entering directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/sys'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/sys'
+../sys/setparams cg 2 B 
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 cg.f
+mpif77.mpich -O3 -mfloat-abi=hard -mfpu=vfpv4 -o ../bin/cg.B.2 cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o -lmpi
+make[1]: Leaving directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/CG'
+4
+   =========================================
+   =      NAS Parallel Benchmarks 3.3      =
+   =      MPI/F77/C                        =
+   =========================================
+
+cd CG; make NPROCS=4 CLASS=B
+make[1]: Entering directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/CG'
+make[2]: Entering directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/sys'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/sys'
+../sys/setparams cg 4 B 
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 cg.f
+mpif77.mpich -O3 -mfloat-abi=hard -mfpu=vfpv4 -o ../bin/cg.B.4 cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o -lmpi
+make[1]: Leaving directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/CG'
+8
+   =========================================
+   =      NAS Parallel Benchmarks 3.3      =
+   =      MPI/F77/C                        =
+   =========================================
+
+cd CG; make NPROCS=8 CLASS=B
+make[1]: Entering directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/CG'
+make[2]: Entering directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/sys'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/sys'
+../sys/setparams cg 8 B 
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 cg.f
+mpif77.mpich -O3 -mfloat-abi=hard -mfpu=vfpv4 -o ../bin/cg.B.8 cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o -lmpi
+make[1]: Leaving directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/CG'
+1
+   =========================================
+   =      NAS Parallel Benchmarks 3.3      =
+   =      MPI/F77/C                        =
+   =========================================
+
+cd CG; make NPROCS=1 CLASS=C
+make[1]: Entering directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/CG'
+make[2]: Entering directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/sys'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/sys'
+../sys/setparams cg 1 C 
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 cg.f
+mpif77.mpich -O3 -mfloat-abi=hard -mfpu=vfpv4 -o ../bin/cg.C.1 cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o -lmpi
+make[1]: Leaving directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/CG'
+2
+   =========================================
+   =      NAS Parallel Benchmarks 3.3      =
+   =      MPI/F77/C                        =
+   =========================================
+
+cd CG; make NPROCS=2 CLASS=C
+make[1]: Entering directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/CG'
+make[2]: Entering directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/sys'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/sys'
+../sys/setparams cg 2 C 
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 cg.f
+mpif77.mpich -O3 -mfloat-abi=hard -mfpu=vfpv4 -o ../bin/cg.C.2 cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o -lmpi
+make[1]: Leaving directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/CG'
+4
+   =========================================
+   =      NAS Parallel Benchmarks 3.3      =
+   =      MPI/F77/C                        =
+   =========================================
+
+cd CG; make NPROCS=4 CLASS=C
+make[1]: Entering directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/CG'
+make[2]: Entering directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/sys'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/sys'
+../sys/setparams cg 4 C 
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 cg.f
+mpif77.mpich -O3 -mfloat-abi=hard -mfpu=vfpv4 -o ../bin/cg.C.4 cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o -lmpi
+make[1]: Leaving directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/CG'
+8
+   =========================================
+   =      NAS Parallel Benchmarks 3.3      =
+   =      MPI/F77/C                        =
+   =========================================
+
+cd CG; make NPROCS=8 CLASS=C
+make[1]: Entering directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/CG'
+make[2]: Entering directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/sys'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/sys'
+../sys/setparams cg 8 C 
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 cg.f
+mpif77.mpich -O3 -mfloat-abi=hard -mfpu=vfpv4 -o ../bin/cg.C.8 cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o -lmpi
+make[1]: Leaving directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/CG'
+1
+   =========================================
+   =      NAS Parallel Benchmarks 3.3      =
+   =      MPI/F77/C                        =
+   =========================================
+
+cd CG; make NPROCS=1 CLASS=D
+make[1]: Entering directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/CG'
+make[2]: Entering directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/sys'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/sys'
+../sys/setparams cg 1 D 
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 cg.f
+Makefile:16: recipe for target 'cg.o' failed
+make[1]: Leaving directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/CG'
+Makefile:37: recipe for target 'cg' failed
+2
+   =========================================
+   =      NAS Parallel Benchmarks 3.3      =
+   =      MPI/F77/C                        =
+   =========================================
+
+cd CG; make NPROCS=2 CLASS=D
+make[1]: Entering directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/CG'
+make[2]: Entering directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/sys'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/sys'
+../sys/setparams cg 2 D 
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 cg.f
+Makefile:16: recipe for target 'cg.o' failed
+make[1]: Leaving directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/CG'
+Makefile:37: recipe for target 'cg' failed
+4
+   =========================================
+   =      NAS Parallel Benchmarks 3.3      =
+   =      MPI/F77/C                        =
+   =========================================
+
+cd CG; make NPROCS=4 CLASS=D
+make[1]: Entering directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/CG'
+make[2]: Entering directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/sys'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/sys'
+../sys/setparams cg 4 D 
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 cg.f
+Makefile:16: recipe for target 'cg.o' failed
+make[1]: Leaving directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/CG'
+Makefile:37: recipe for target 'cg' failed
+8
+   =========================================
+   =      NAS Parallel Benchmarks 3.3      =
+   =      MPI/F77/C                        =
+   =========================================
+
+cd CG; make NPROCS=8 CLASS=D
+make[1]: Entering directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/CG'
+make[2]: Entering directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/sys'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/sys'
+../sys/setparams cg 8 D 
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 cg.f
+mpif77.mpich -O3 -mfloat-abi=hard -mfpu=vfpv4 -o ../bin/cg.D.8 cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o -lmpi
+make[1]: Leaving directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/CG'
+1
+   =========================================
+   =      NAS Parallel Benchmarks 3.3      =
+   =      MPI/F77/C                        =
+   =========================================
+
+cd LU; make NPROCS=1 CLASS=S VERSION=
+make[1]: Entering directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/LU'
+make[2]: Entering directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/sys'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/sys'
+../sys/setparams lu 1 S 
+make[2]: Entering directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/LU'
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 lu.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 init_comm.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 read_input.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 bcast_inputs.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 proc_grid.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 neighbors.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 subdomain.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 setcoeff.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 setbv.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 exact.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 setiv.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 erhs.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 ssor.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 exchange_1.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 exchange_3.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 exchange_4.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 exchange_5.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 exchange_6.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 rhs.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 jacld.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 jacu.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 error.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 pintgr.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 verify.f
+mpif77.mpich -O3 -mfloat-abi=hard -mfpu=vfpv4 -o ../bin/lu.S.1 lu.o init_comm.o read_input.o bcast_inputs.o proc_grid.o neighbors.o nodedim.o subdomain.o setcoeff.o setbv.o exact.o setiv.o erhs.o ssor.o exchange_1.o exchange_3.o exchange_4.o exchange_5.o exchange_6.o rhs.o l2norm.o jacld.o blts.o jacu.o buts.o error.o pintgr.o verify.o ../common/print_results.o ../common/timers.o -lmpi
+make[2]: Leaving directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/LU'
+make[1]: Leaving directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/LU'
+2
+   =========================================
+   =      NAS Parallel Benchmarks 3.3      =
+   =      MPI/F77/C                        =
+   =========================================
+
+cd LU; make NPROCS=2 CLASS=S VERSION=
+make[1]: Entering directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/LU'
+make[2]: Entering directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/sys'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/sys'
+../sys/setparams lu 2 S 
+make[2]: Entering directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/LU'
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 lu.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 init_comm.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 read_input.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 bcast_inputs.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 proc_grid.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 neighbors.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 subdomain.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 setcoeff.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 setbv.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 exact.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 setiv.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 erhs.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 ssor.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 exchange_1.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 exchange_3.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 exchange_4.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 exchange_5.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 exchange_6.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 rhs.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 jacld.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 jacu.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 error.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 pintgr.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 verify.f
+mpif77.mpich -O3 -mfloat-abi=hard -mfpu=vfpv4 -o ../bin/lu.S.2 lu.o init_comm.o read_input.o bcast_inputs.o proc_grid.o neighbors.o nodedim.o subdomain.o setcoeff.o setbv.o exact.o setiv.o erhs.o ssor.o exchange_1.o exchange_3.o exchange_4.o exchange_5.o exchange_6.o rhs.o l2norm.o jacld.o blts.o jacu.o buts.o error.o pintgr.o verify.o ../common/print_results.o ../common/timers.o -lmpi
+make[2]: Leaving directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/LU'
+make[1]: Leaving directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/LU'
+4
+   =========================================
+   =      NAS Parallel Benchmarks 3.3      =
+   =      MPI/F77/C                        =
+   =========================================
+
+cd LU; make NPROCS=4 CLASS=S VERSION=
+make[1]: Entering directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/LU'
+make[2]: Entering directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/sys'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/sys'
+../sys/setparams lu 4 S 
+make[2]: Entering directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/LU'
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 lu.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 init_comm.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 read_input.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 bcast_inputs.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 proc_grid.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 neighbors.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 subdomain.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 setcoeff.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 setbv.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 exact.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 setiv.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 erhs.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 ssor.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 exchange_1.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 exchange_3.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 exchange_4.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 exchange_5.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 exchange_6.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 rhs.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 jacld.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 jacu.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 error.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 pintgr.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 verify.f
+mpif77.mpich -O3 -mfloat-abi=hard -mfpu=vfpv4 -o ../bin/lu.S.4 lu.o init_comm.o read_input.o bcast_inputs.o proc_grid.o neighbors.o nodedim.o subdomain.o setcoeff.o setbv.o exact.o setiv.o erhs.o ssor.o exchange_1.o exchange_3.o exchange_4.o exchange_5.o exchange_6.o rhs.o l2norm.o jacld.o blts.o jacu.o buts.o error.o pintgr.o verify.o ../common/print_results.o ../common/timers.o -lmpi
+make[2]: Leaving directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/LU'
+make[1]: Leaving directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/LU'
+8
+   =========================================
+   =      NAS Parallel Benchmarks 3.3      =
+   =      MPI/F77/C                        =
+   =========================================
+
+cd LU; make NPROCS=8 CLASS=S VERSION=
+make[1]: Entering directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/LU'
+make[2]: Entering directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/sys'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/sys'
+../sys/setparams lu 8 S 
+make[2]: Entering directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/LU'
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 lu.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 init_comm.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 read_input.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 bcast_inputs.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 proc_grid.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 neighbors.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 subdomain.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 setcoeff.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 setbv.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 exact.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 setiv.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 erhs.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 ssor.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 exchange_1.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 exchange_3.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 exchange_4.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 exchange_5.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 exchange_6.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 rhs.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 jacld.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 jacu.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 error.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 pintgr.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 verify.f
+mpif77.mpich -O3 -mfloat-abi=hard -mfpu=vfpv4 -o ../bin/lu.S.8 lu.o init_comm.o read_input.o bcast_inputs.o proc_grid.o neighbors.o nodedim.o subdomain.o setcoeff.o setbv.o exact.o setiv.o erhs.o ssor.o exchange_1.o exchange_3.o exchange_4.o exchange_5.o exchange_6.o rhs.o l2norm.o jacld.o blts.o jacu.o buts.o error.o pintgr.o verify.o ../common/print_results.o ../common/timers.o -lmpi
+make[2]: Leaving directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/LU'
+make[1]: Leaving directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/LU'
+1
+   =========================================
+   =      NAS Parallel Benchmarks 3.3      =
+   =      MPI/F77/C                        =
+   =========================================
+
+cd LU; make NPROCS=1 CLASS=W VERSION=
+make[1]: Entering directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/LU'
+make[2]: Entering directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/sys'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/sys'
+../sys/setparams lu 1 W 
+make[2]: Entering directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/LU'
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 lu.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 init_comm.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 read_input.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 bcast_inputs.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 proc_grid.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 neighbors.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 subdomain.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 setcoeff.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 setbv.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 exact.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 setiv.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 erhs.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 ssor.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 exchange_1.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 exchange_3.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 exchange_4.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 exchange_5.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 exchange_6.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 rhs.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 jacld.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 jacu.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 error.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 pintgr.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 verify.f
+mpif77.mpich -O3 -mfloat-abi=hard -mfpu=vfpv4 -o ../bin/lu.W.1 lu.o init_comm.o read_input.o bcast_inputs.o proc_grid.o neighbors.o nodedim.o subdomain.o setcoeff.o setbv.o exact.o setiv.o erhs.o ssor.o exchange_1.o exchange_3.o exchange_4.o exchange_5.o exchange_6.o rhs.o l2norm.o jacld.o blts.o jacu.o buts.o error.o pintgr.o verify.o ../common/print_results.o ../common/timers.o -lmpi
+make[2]: Leaving directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/LU'
+make[1]: Leaving directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/LU'
+2
+   =========================================
+   =      NAS Parallel Benchmarks 3.3      =
+   =      MPI/F77/C                        =
+   =========================================
+
+cd LU; make NPROCS=2 CLASS=W VERSION=
+make[1]: Entering directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/LU'
+make[2]: Entering directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/sys'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/sys'
+../sys/setparams lu 2 W 
+make[2]: Entering directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/LU'
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 lu.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 init_comm.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 read_input.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 bcast_inputs.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 proc_grid.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 neighbors.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 subdomain.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 setcoeff.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 setbv.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 exact.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 setiv.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 erhs.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 ssor.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 exchange_1.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 exchange_3.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 exchange_4.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 exchange_5.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 exchange_6.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 rhs.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 jacld.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 jacu.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 error.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 pintgr.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 verify.f
+mpif77.mpich -O3 -mfloat-abi=hard -mfpu=vfpv4 -o ../bin/lu.W.2 lu.o init_comm.o read_input.o bcast_inputs.o proc_grid.o neighbors.o nodedim.o subdomain.o setcoeff.o setbv.o exact.o setiv.o erhs.o ssor.o exchange_1.o exchange_3.o exchange_4.o exchange_5.o exchange_6.o rhs.o l2norm.o jacld.o blts.o jacu.o buts.o error.o pintgr.o verify.o ../common/print_results.o ../common/timers.o -lmpi
+make[2]: Leaving directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/LU'
+make[1]: Leaving directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/LU'
+4
+   =========================================
+   =      NAS Parallel Benchmarks 3.3      =
+   =      MPI/F77/C                        =
+   =========================================
+
+cd LU; make NPROCS=4 CLASS=W VERSION=
+make[1]: Entering directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/LU'
+make[2]: Entering directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/sys'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/sys'
+../sys/setparams lu 4 W 
+make[2]: Entering directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/LU'
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 lu.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 init_comm.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 read_input.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 bcast_inputs.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 proc_grid.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 neighbors.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 subdomain.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 setcoeff.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 setbv.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 exact.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 setiv.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 erhs.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 ssor.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 exchange_1.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 exchange_3.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 exchange_4.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 exchange_5.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 exchange_6.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 rhs.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 jacld.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 jacu.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 error.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 pintgr.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 verify.f
+mpif77.mpich -O3 -mfloat-abi=hard -mfpu=vfpv4 -o ../bin/lu.W.4 lu.o init_comm.o read_input.o bcast_inputs.o proc_grid.o neighbors.o nodedim.o subdomain.o setcoeff.o setbv.o exact.o setiv.o erhs.o ssor.o exchange_1.o exchange_3.o exchange_4.o exchange_5.o exchange_6.o rhs.o l2norm.o jacld.o blts.o jacu.o buts.o error.o pintgr.o verify.o ../common/print_results.o ../common/timers.o -lmpi
+make[2]: Leaving directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/LU'
+make[1]: Leaving directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/LU'
+8
+   =========================================
+   =      NAS Parallel Benchmarks 3.3      =
+   =      MPI/F77/C                        =
+   =========================================
+
+cd LU; make NPROCS=8 CLASS=W VERSION=
+make[1]: Entering directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/LU'
+make[2]: Entering directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/sys'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/sys'
+../sys/setparams lu 8 W 
+make[2]: Entering directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/LU'
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 lu.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 init_comm.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 read_input.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 bcast_inputs.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 proc_grid.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 neighbors.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 subdomain.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 setcoeff.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 setbv.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 exact.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 setiv.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 erhs.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 ssor.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 exchange_1.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 exchange_3.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 exchange_4.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 exchange_5.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 exchange_6.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 rhs.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 jacld.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 jacu.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 error.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 pintgr.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 verify.f
+mpif77.mpich -O3 -mfloat-abi=hard -mfpu=vfpv4 -o ../bin/lu.W.8 lu.o init_comm.o read_input.o bcast_inputs.o proc_grid.o neighbors.o nodedim.o subdomain.o setcoeff.o setbv.o exact.o setiv.o erhs.o ssor.o exchange_1.o exchange_3.o exchange_4.o exchange_5.o exchange_6.o rhs.o l2norm.o jacld.o blts.o jacu.o buts.o error.o pintgr.o verify.o ../common/print_results.o ../common/timers.o -lmpi
+make[2]: Leaving directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/LU'
+make[1]: Leaving directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/LU'
+1
+   =========================================
+   =      NAS Parallel Benchmarks 3.3      =
+   =      MPI/F77/C                        =
+   =========================================
+
+cd LU; make NPROCS=1 CLASS=A VERSION=
+make[1]: Entering directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/LU'
+make[2]: Entering directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/sys'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/sys'
+../sys/setparams lu 1 A 
+make[2]: Entering directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/LU'
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 lu.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 init_comm.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 read_input.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 bcast_inputs.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 proc_grid.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 neighbors.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 subdomain.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 setcoeff.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 setbv.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 exact.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 setiv.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 erhs.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 ssor.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 exchange_1.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 exchange_3.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 exchange_4.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 exchange_5.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 exchange_6.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 rhs.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 jacld.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 jacu.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 error.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 pintgr.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 verify.f
+mpif77.mpich -O3 -mfloat-abi=hard -mfpu=vfpv4 -o ../bin/lu.A.1 lu.o init_comm.o read_input.o bcast_inputs.o proc_grid.o neighbors.o nodedim.o subdomain.o setcoeff.o setbv.o exact.o setiv.o erhs.o ssor.o exchange_1.o exchange_3.o exchange_4.o exchange_5.o exchange_6.o rhs.o l2norm.o jacld.o blts.o jacu.o buts.o error.o pintgr.o verify.o ../common/print_results.o ../common/timers.o -lmpi
+make[2]: Leaving directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/LU'
+make[1]: Leaving directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/LU'
+2
+   =========================================
+   =      NAS Parallel Benchmarks 3.3      =
+   =      MPI/F77/C                        =
+   =========================================
+
+cd LU; make NPROCS=2 CLASS=A VERSION=
+make[1]: Entering directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/LU'
+make[2]: Entering directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/sys'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/sys'
+../sys/setparams lu 2 A 
+make[2]: Entering directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/LU'
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 lu.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 init_comm.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 read_input.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 bcast_inputs.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 proc_grid.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 neighbors.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 subdomain.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 setcoeff.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 setbv.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 exact.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 setiv.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 erhs.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 ssor.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 exchange_1.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 exchange_3.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 exchange_4.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 exchange_5.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 exchange_6.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 rhs.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 jacld.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 jacu.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 error.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 pintgr.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 verify.f
+mpif77.mpich -O3 -mfloat-abi=hard -mfpu=vfpv4 -o ../bin/lu.A.2 lu.o init_comm.o read_input.o bcast_inputs.o proc_grid.o neighbors.o nodedim.o subdomain.o setcoeff.o setbv.o exact.o setiv.o erhs.o ssor.o exchange_1.o exchange_3.o exchange_4.o exchange_5.o exchange_6.o rhs.o l2norm.o jacld.o blts.o jacu.o buts.o error.o pintgr.o verify.o ../common/print_results.o ../common/timers.o -lmpi
+make[2]: Leaving directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/LU'
+make[1]: Leaving directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/LU'
+4
+   =========================================
+   =      NAS Parallel Benchmarks 3.3      =
+   =      MPI/F77/C                        =
+   =========================================
+
+cd LU; make NPROCS=4 CLASS=A VERSION=
+make[1]: Entering directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/LU'
+make[2]: Entering directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/sys'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/sys'
+../sys/setparams lu 4 A 
+make[2]: Entering directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/LU'
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 lu.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 init_comm.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 read_input.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 bcast_inputs.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 proc_grid.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 neighbors.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 subdomain.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 setcoeff.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 setbv.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 exact.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 setiv.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 erhs.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 ssor.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 exchange_1.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 exchange_3.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 exchange_4.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 exchange_5.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 exchange_6.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 rhs.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 jacld.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 jacu.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 error.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 pintgr.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 verify.f
+mpif77.mpich -O3 -mfloat-abi=hard -mfpu=vfpv4 -o ../bin/lu.A.4 lu.o init_comm.o read_input.o bcast_inputs.o proc_grid.o neighbors.o nodedim.o subdomain.o setcoeff.o setbv.o exact.o setiv.o erhs.o ssor.o exchange_1.o exchange_3.o exchange_4.o exchange_5.o exchange_6.o rhs.o l2norm.o jacld.o blts.o jacu.o buts.o error.o pintgr.o verify.o ../common/print_results.o ../common/timers.o -lmpi
+make[2]: Leaving directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/LU'
+make[1]: Leaving directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/LU'
+8
+   =========================================
+   =      NAS Parallel Benchmarks 3.3      =
+   =      MPI/F77/C                        =
+   =========================================
+
+cd LU; make NPROCS=8 CLASS=A VERSION=
+make[1]: Entering directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/LU'
+make[2]: Entering directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/sys'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/sys'
+../sys/setparams lu 8 A 
+make[2]: Entering directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/LU'
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 lu.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 init_comm.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 read_input.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 bcast_inputs.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 proc_grid.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 neighbors.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 subdomain.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 setcoeff.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 setbv.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 exact.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 setiv.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 erhs.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 ssor.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 exchange_1.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 exchange_3.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 exchange_4.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 exchange_5.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 exchange_6.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 rhs.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 jacld.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 jacu.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 error.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 pintgr.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 verify.f
+mpif77.mpich -O3 -mfloat-abi=hard -mfpu=vfpv4 -o ../bin/lu.A.8 lu.o init_comm.o read_input.o bcast_inputs.o proc_grid.o neighbors.o nodedim.o subdomain.o setcoeff.o setbv.o exact.o setiv.o erhs.o ssor.o exchange_1.o exchange_3.o exchange_4.o exchange_5.o exchange_6.o rhs.o l2norm.o jacld.o blts.o jacu.o buts.o error.o pintgr.o verify.o ../common/print_results.o ../common/timers.o -lmpi
+make[2]: Leaving directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/LU'
+make[1]: Leaving directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/LU'
+1
+   =========================================
+   =      NAS Parallel Benchmarks 3.3      =
+   =      MPI/F77/C                        =
+   =========================================
+
+cd LU; make NPROCS=1 CLASS=B VERSION=
+make[1]: Entering directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/LU'
+make[2]: Entering directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/sys'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/sys'
+../sys/setparams lu 1 B 
+make[2]: Entering directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/LU'
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 lu.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 init_comm.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 read_input.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 bcast_inputs.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 proc_grid.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 neighbors.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 subdomain.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 setcoeff.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 setbv.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 exact.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 setiv.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 erhs.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 ssor.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 exchange_1.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 exchange_3.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 exchange_4.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 exchange_5.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 exchange_6.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 rhs.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 jacld.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 jacu.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 error.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 pintgr.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 verify.f
+mpif77.mpich -O3 -mfloat-abi=hard -mfpu=vfpv4 -o ../bin/lu.B.1 lu.o init_comm.o read_input.o bcast_inputs.o proc_grid.o neighbors.o nodedim.o subdomain.o setcoeff.o setbv.o exact.o setiv.o erhs.o ssor.o exchange_1.o exchange_3.o exchange_4.o exchange_5.o exchange_6.o rhs.o l2norm.o jacld.o blts.o jacu.o buts.o error.o pintgr.o verify.o ../common/print_results.o ../common/timers.o -lmpi
+make[2]: Leaving directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/LU'
+make[1]: Leaving directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/LU'
+2
+   =========================================
+   =      NAS Parallel Benchmarks 3.3      =
+   =      MPI/F77/C                        =
+   =========================================
+
+cd LU; make NPROCS=2 CLASS=B VERSION=
+make[1]: Entering directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/LU'
+make[2]: Entering directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/sys'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/sys'
+../sys/setparams lu 2 B 
+make[2]: Entering directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/LU'
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 lu.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 init_comm.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 read_input.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 bcast_inputs.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 proc_grid.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 neighbors.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 subdomain.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 setcoeff.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 setbv.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 exact.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 setiv.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 erhs.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 ssor.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 exchange_1.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 exchange_3.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 exchange_4.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 exchange_5.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 exchange_6.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 rhs.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 jacld.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 jacu.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 error.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 pintgr.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 verify.f
+mpif77.mpich -O3 -mfloat-abi=hard -mfpu=vfpv4 -o ../bin/lu.B.2 lu.o init_comm.o read_input.o bcast_inputs.o proc_grid.o neighbors.o nodedim.o subdomain.o setcoeff.o setbv.o exact.o setiv.o erhs.o ssor.o exchange_1.o exchange_3.o exchange_4.o exchange_5.o exchange_6.o rhs.o l2norm.o jacld.o blts.o jacu.o buts.o error.o pintgr.o verify.o ../common/print_results.o ../common/timers.o -lmpi
+make[2]: Leaving directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/LU'
+make[1]: Leaving directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/LU'
+4
+   =========================================
+   =      NAS Parallel Benchmarks 3.3      =
+   =      MPI/F77/C                        =
+   =========================================
+
+cd LU; make NPROCS=4 CLASS=B VERSION=
+make[1]: Entering directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/LU'
+make[2]: Entering directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/sys'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/sys'
+../sys/setparams lu 4 B 
+make[2]: Entering directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/LU'
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 lu.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 init_comm.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 read_input.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 bcast_inputs.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 proc_grid.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 neighbors.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 subdomain.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 setcoeff.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 setbv.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 exact.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 setiv.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 erhs.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 ssor.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 exchange_1.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 exchange_3.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 exchange_4.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 exchange_5.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 exchange_6.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 rhs.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 jacld.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 jacu.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 error.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 pintgr.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 verify.f
+mpif77.mpich -O3 -mfloat-abi=hard -mfpu=vfpv4 -o ../bin/lu.B.4 lu.o init_comm.o read_input.o bcast_inputs.o proc_grid.o neighbors.o nodedim.o subdomain.o setcoeff.o setbv.o exact.o setiv.o erhs.o ssor.o exchange_1.o exchange_3.o exchange_4.o exchange_5.o exchange_6.o rhs.o l2norm.o jacld.o blts.o jacu.o buts.o error.o pintgr.o verify.o ../common/print_results.o ../common/timers.o -lmpi
+make[2]: Leaving directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/LU'
+make[1]: Leaving directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/LU'
+8
+   =========================================
+   =      NAS Parallel Benchmarks 3.3      =
+   =      MPI/F77/C                        =
+   =========================================
+
+cd LU; make NPROCS=8 CLASS=B VERSION=
+make[1]: Entering directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/LU'
+make[2]: Entering directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/sys'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/sys'
+../sys/setparams lu 8 B 
+make[2]: Entering directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/LU'
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 lu.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 init_comm.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 read_input.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 bcast_inputs.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 proc_grid.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 neighbors.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 subdomain.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 setcoeff.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 setbv.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 exact.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 setiv.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 erhs.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 ssor.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 exchange_1.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 exchange_3.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 exchange_4.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 exchange_5.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 exchange_6.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 rhs.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 jacld.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 jacu.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 error.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 pintgr.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 verify.f
+mpif77.mpich -O3 -mfloat-abi=hard -mfpu=vfpv4 -o ../bin/lu.B.8 lu.o init_comm.o read_input.o bcast_inputs.o proc_grid.o neighbors.o nodedim.o subdomain.o setcoeff.o setbv.o exact.o setiv.o erhs.o ssor.o exchange_1.o exchange_3.o exchange_4.o exchange_5.o exchange_6.o rhs.o l2norm.o jacld.o blts.o jacu.o buts.o error.o pintgr.o verify.o ../common/print_results.o ../common/timers.o -lmpi
+make[2]: Leaving directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/LU'
+make[1]: Leaving directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/LU'
+1
+   =========================================
+   =      NAS Parallel Benchmarks 3.3      =
+   =      MPI/F77/C                        =
+   =========================================
+
+cd LU; make NPROCS=1 CLASS=C VERSION=
+make[1]: Entering directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/LU'
+make[2]: Entering directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/sys'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/sys'
+../sys/setparams lu 1 C 
+make[2]: Entering directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/LU'
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 lu.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 init_comm.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 read_input.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 bcast_inputs.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 proc_grid.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 neighbors.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 subdomain.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 setcoeff.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 setbv.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 exact.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 setiv.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 erhs.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 ssor.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 exchange_1.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 exchange_3.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 exchange_4.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 exchange_5.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 exchange_6.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 rhs.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 jacld.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 jacu.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 error.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 pintgr.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 verify.f
+mpif77.mpich -O3 -mfloat-abi=hard -mfpu=vfpv4 -o ../bin/lu.C.1 lu.o init_comm.o read_input.o bcast_inputs.o proc_grid.o neighbors.o nodedim.o subdomain.o setcoeff.o setbv.o exact.o setiv.o erhs.o ssor.o exchange_1.o exchange_3.o exchange_4.o exchange_5.o exchange_6.o rhs.o l2norm.o jacld.o blts.o jacu.o buts.o error.o pintgr.o verify.o ../common/print_results.o ../common/timers.o -lmpi
+make[2]: Leaving directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/LU'
+make[1]: Leaving directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/LU'
+2
+   =========================================
+   =      NAS Parallel Benchmarks 3.3      =
+   =      MPI/F77/C                        =
+   =========================================
+
+cd LU; make NPROCS=2 CLASS=C VERSION=
+make[1]: Entering directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/LU'
+make[2]: Entering directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/sys'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/sys'
+../sys/setparams lu 2 C 
+make[2]: Entering directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/LU'
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 lu.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 init_comm.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 read_input.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 bcast_inputs.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 proc_grid.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 neighbors.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 subdomain.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 setcoeff.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 setbv.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 exact.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 setiv.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 erhs.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 ssor.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 exchange_1.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 exchange_3.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 exchange_4.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 exchange_5.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 exchange_6.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 rhs.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 jacld.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 jacu.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 error.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 pintgr.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 verify.f
+mpif77.mpich -O3 -mfloat-abi=hard -mfpu=vfpv4 -o ../bin/lu.C.2 lu.o init_comm.o read_input.o bcast_inputs.o proc_grid.o neighbors.o nodedim.o subdomain.o setcoeff.o setbv.o exact.o setiv.o erhs.o ssor.o exchange_1.o exchange_3.o exchange_4.o exchange_5.o exchange_6.o rhs.o l2norm.o jacld.o blts.o jacu.o buts.o error.o pintgr.o verify.o ../common/print_results.o ../common/timers.o -lmpi
+make[2]: Leaving directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/LU'
+make[1]: Leaving directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/LU'
+4
+   =========================================
+   =      NAS Parallel Benchmarks 3.3      =
+   =      MPI/F77/C                        =
+   =========================================
+
+cd LU; make NPROCS=4 CLASS=C VERSION=
+make[1]: Entering directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/LU'
+make[2]: Entering directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/sys'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/sys'
+../sys/setparams lu 4 C 
+make[2]: Entering directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/LU'
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 lu.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 init_comm.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 read_input.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 bcast_inputs.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 proc_grid.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 neighbors.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 subdomain.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 setcoeff.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 setbv.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 exact.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 setiv.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 erhs.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 ssor.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 exchange_1.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 exchange_3.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 exchange_4.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 exchange_5.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 exchange_6.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 rhs.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 jacld.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 jacu.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 error.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 pintgr.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 verify.f
+mpif77.mpich -O3 -mfloat-abi=hard -mfpu=vfpv4 -o ../bin/lu.C.4 lu.o init_comm.o read_input.o bcast_inputs.o proc_grid.o neighbors.o nodedim.o subdomain.o setcoeff.o setbv.o exact.o setiv.o erhs.o ssor.o exchange_1.o exchange_3.o exchange_4.o exchange_5.o exchange_6.o rhs.o l2norm.o jacld.o blts.o jacu.o buts.o error.o pintgr.o verify.o ../common/print_results.o ../common/timers.o -lmpi
+make[2]: Leaving directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/LU'
+make[1]: Leaving directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/LU'
+8
+   =========================================
+   =      NAS Parallel Benchmarks 3.3      =
+   =      MPI/F77/C                        =
+   =========================================
+
+cd LU; make NPROCS=8 CLASS=C VERSION=
+make[1]: Entering directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/LU'
+make[2]: Entering directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/sys'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/sys'
+../sys/setparams lu 8 C 
+make[2]: Entering directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/LU'
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 lu.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 init_comm.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 read_input.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 bcast_inputs.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 proc_grid.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 neighbors.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 subdomain.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 setcoeff.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 setbv.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 exact.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 setiv.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 erhs.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 ssor.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 exchange_1.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 exchange_3.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 exchange_4.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 exchange_5.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 exchange_6.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 rhs.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 jacld.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 jacu.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 error.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 pintgr.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 verify.f
+mpif77.mpich -O3 -mfloat-abi=hard -mfpu=vfpv4 -o ../bin/lu.C.8 lu.o init_comm.o read_input.o bcast_inputs.o proc_grid.o neighbors.o nodedim.o subdomain.o setcoeff.o setbv.o exact.o setiv.o erhs.o ssor.o exchange_1.o exchange_3.o exchange_4.o exchange_5.o exchange_6.o rhs.o l2norm.o jacld.o blts.o jacu.o buts.o error.o pintgr.o verify.o ../common/print_results.o ../common/timers.o -lmpi
+make[2]: Leaving directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/LU'
+make[1]: Leaving directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/LU'
+1
+   =========================================
+   =      NAS Parallel Benchmarks 3.3      =
+   =      MPI/F77/C                        =
+   =========================================
+
+cd LU; make NPROCS=1 CLASS=D VERSION=
+make[1]: Entering directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/LU'
+make[2]: Entering directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/sys'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/sys'
+../sys/setparams lu 1 D 
+make[2]: Entering directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/LU'
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 lu.f
+Makefile:40: recipe for target 'lu.o' failed
+make[2]: Leaving directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/LU'
+Makefile:28: recipe for target '../bin/lu.D.1' failed
+make[1]: Leaving directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/LU'
+Makefile:21: recipe for target 'lu' failed
+2
+   =========================================
+   =      NAS Parallel Benchmarks 3.3      =
+   =      MPI/F77/C                        =
+   =========================================
+
+cd LU; make NPROCS=2 CLASS=D VERSION=
+make[1]: Entering directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/LU'
+make[2]: Entering directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/sys'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/sys'
+../sys/setparams lu 2 D 
+make[2]: Entering directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/LU'
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 lu.f
+Makefile:40: recipe for target 'lu.o' failed
+make[2]: Leaving directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/LU'
+Makefile:28: recipe for target '../bin/lu.D.2' failed
+make[1]: Leaving directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/LU'
+Makefile:21: recipe for target 'lu' failed
+4
+   =========================================
+   =      NAS Parallel Benchmarks 3.3      =
+   =      MPI/F77/C                        =
+   =========================================
+
+cd LU; make NPROCS=4 CLASS=D VERSION=
+make[1]: Entering directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/LU'
+make[2]: Entering directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/sys'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/sys'
+../sys/setparams lu 4 D 
+make[2]: Entering directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/LU'
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 lu.f
+Makefile:40: recipe for target 'lu.o' failed
+make[2]: Leaving directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/LU'
+Makefile:28: recipe for target '../bin/lu.D.4' failed
+make[1]: Leaving directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/LU'
+Makefile:21: recipe for target 'lu' failed
+8
+   =========================================
+   =      NAS Parallel Benchmarks 3.3      =
+   =      MPI/F77/C                        =
+   =========================================
+
+cd LU; make NPROCS=8 CLASS=D VERSION=
+make[1]: Entering directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/LU'
+make[2]: Entering directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/sys'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/sys'
+../sys/setparams lu 8 D 
+make[2]: Entering directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/LU'
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 lu.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 init_comm.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 read_input.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 bcast_inputs.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 proc_grid.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 neighbors.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 subdomain.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 setcoeff.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 setbv.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 exact.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 setiv.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 erhs.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 ssor.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 exchange_1.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 exchange_3.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 exchange_4.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 exchange_5.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 exchange_6.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 rhs.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 jacld.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 jacu.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 error.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 pintgr.f
+mpif77.mpich -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 verify.f
+mpif77.mpich -O3 -mfloat-abi=hard -mfpu=vfpv4 -o ../bin/lu.D.8 lu.o init_comm.o read_input.o bcast_inputs.o proc_grid.o neighbors.o nodedim.o subdomain.o setcoeff.o setbv.o exact.o setiv.o erhs.o ssor.o exchange_1.o exchange_3.o exchange_4.o exchange_5.o exchange_6.o rhs.o l2norm.o jacld.o blts.o jacu.o buts.o error.o pintgr.o verify.o ../common/print_results.o ../common/timers.o -lmpi
+make[2]: Leaving directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/LU'
+make[1]: Leaving directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-MPI/LU'
+1
+   ============================================
+   =      NAS PARALLEL BENCHMARKS 3.3         =
+   =      OpenMP Versions                     =
+   =      F77/C                               =
+   ============================================
+
+cd CG; make CLASS=S
+make[1]: Entering directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-OMP/CG'
+make[2]: Entering directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-OMP/sys'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-OMP/sys'
+../sys/setparams cg S
+gfortran -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 -fopenmp cg.f
+gfortran -O3 -mfloat-abi=hard -mfpu=vfpv4 -fopenmp -o ../bin/cg.S.x cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o ../common/wtime.o 
+make[1]: Leaving directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-OMP/CG'
+2
+1
+   ============================================
+   =      NAS PARALLEL BENCHMARKS 3.3         =
+   =      OpenMP Versions                     =
+   =      F77/C                               =
+   ============================================
+
+cd CG; make CLASS=W
+make[1]: Entering directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-OMP/CG'
+make[2]: Entering directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-OMP/sys'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-OMP/sys'
+../sys/setparams cg W
+gfortran -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 -fopenmp cg.f
+gfortran -O3 -mfloat-abi=hard -mfpu=vfpv4 -fopenmp -o ../bin/cg.W.x cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o ../common/wtime.o 
+make[1]: Leaving directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-OMP/CG'
+2
+1
+   ============================================
+   =      NAS PARALLEL BENCHMARKS 3.3         =
+   =      OpenMP Versions                     =
+   =      F77/C                               =
+   ============================================
+
+cd CG; make CLASS=A
+make[1]: Entering directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-OMP/CG'
+make[2]: Entering directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-OMP/sys'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-OMP/sys'
+../sys/setparams cg A
+gfortran -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 -fopenmp cg.f
+gfortran -O3 -mfloat-abi=hard -mfpu=vfpv4 -fopenmp -o ../bin/cg.A.x cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o ../common/wtime.o 
+make[1]: Leaving directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-OMP/CG'
+2
+1
+   ============================================
+   =      NAS PARALLEL BENCHMARKS 3.3         =
+   =      OpenMP Versions                     =
+   =      F77/C                               =
+   ============================================
+
+cd CG; make CLASS=B
+make[1]: Entering directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-OMP/CG'
+make[2]: Entering directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-OMP/sys'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-OMP/sys'
+../sys/setparams cg B
+gfortran -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 -fopenmp cg.f
+gfortran -O3 -mfloat-abi=hard -mfpu=vfpv4 -fopenmp -o ../bin/cg.B.x cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o ../common/wtime.o 
+make[1]: Leaving directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-OMP/CG'
+2
+1
+   ============================================
+   =      NAS PARALLEL BENCHMARKS 3.3         =
+   =      OpenMP Versions                     =
+   =      F77/C                               =
+   ============================================
+
+cd CG; make CLASS=C
+make[1]: Entering directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-OMP/CG'
+make[2]: Entering directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-OMP/sys'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-OMP/sys'
+../sys/setparams cg C
+gfortran -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 -fopenmp cg.f
+gfortran -O3 -mfloat-abi=hard -mfpu=vfpv4 -fopenmp -o ../bin/cg.C.x cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o ../common/wtime.o 
+make[1]: Leaving directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-OMP/CG'
+2
+1
+   ============================================
+   =      NAS PARALLEL BENCHMARKS 3.3         =
+   =      OpenMP Versions                     =
+   =      F77/C                               =
+   ============================================
+
+cd CG; make CLASS=D
+make[1]: Entering directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-OMP/CG'
+make[2]: Entering directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-OMP/sys'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-OMP/sys'
+../sys/setparams cg D
+gfortran -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 -fopenmp cg.f
+Makefile:16: recipe for target 'cg.o' failed
+make[1]: Leaving directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-OMP/CG'
+Makefile:35: recipe for target 'cg' failed
+2
+1
+   ============================================
+   =      NAS PARALLEL BENCHMARKS 3.3         =
+   =      OpenMP Versions                     =
+   =      F77/C                               =
+   ============================================
+
+cd LU; make CLASS=S VERSION=
+make[1]: Entering directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-OMP/LU'
+make[2]: Entering directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-OMP/sys'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-OMP/sys'
+../sys/setparams lu S
+make[2]: Entering directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-OMP/LU'
+gfortran -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 -fopenmp lu.f
+gfortran -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 -fopenmp read_input.f
+gfortran -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 -fopenmp domain.f
+gfortran -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 -fopenmp setcoeff.f
+gfortran -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 -fopenmp setbv.f
+gfortran -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 -fopenmp exact.f
+gfortran -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 -fopenmp setiv.f
+gfortran -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 -fopenmp erhs.f
+gfortran -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 -fopenmp ssor.f
+gfortran -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 -fopenmp rhs.f
+gfortran -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 -fopenmp jacld.f
+gfortran -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 -fopenmp jacu.f
+gfortran -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 -fopenmp error.f
+gfortran -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 -fopenmp syncs.f
+gfortran -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 -fopenmp pintgr.f
+gfortran -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 -fopenmp verify.f
+gfortran -O3 -mfloat-abi=hard -mfpu=vfpv4 -fopenmp -o ../bin/lu.S.x lu.o read_input.o domain.o setcoeff.o setbv.o exact.o setiv.o erhs.o ssor.o rhs.o l2norm.o jacld.o blts.o jacu.o buts.o error.o syncs.o pintgr.o verify.o ../common/print_results.o ../common/timers.o ../common/wtime.o 
+make[2]: Leaving directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-OMP/LU'
+make[1]: Leaving directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-OMP/LU'
+2
+1
+   ============================================
+   =      NAS PARALLEL BENCHMARKS 3.3         =
+   =      OpenMP Versions                     =
+   =      F77/C                               =
+   ============================================
+
+cd LU; make CLASS=W VERSION=
+make[1]: Entering directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-OMP/LU'
+make[2]: Entering directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-OMP/sys'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-OMP/sys'
+../sys/setparams lu W
+make[2]: Entering directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-OMP/LU'
+gfortran -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 -fopenmp lu.f
+gfortran -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 -fopenmp read_input.f
+gfortran -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 -fopenmp domain.f
+gfortran -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 -fopenmp setcoeff.f
+gfortran -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 -fopenmp setbv.f
+gfortran -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 -fopenmp exact.f
+gfortran -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 -fopenmp setiv.f
+gfortran -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 -fopenmp erhs.f
+gfortran -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 -fopenmp ssor.f
+gfortran -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 -fopenmp rhs.f
+gfortran -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 -fopenmp jacld.f
+gfortran -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 -fopenmp jacu.f
+gfortran -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 -fopenmp error.f
+gfortran -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 -fopenmp syncs.f
+gfortran -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 -fopenmp pintgr.f
+gfortran -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 -fopenmp verify.f
+gfortran -O3 -mfloat-abi=hard -mfpu=vfpv4 -fopenmp -o ../bin/lu.W.x lu.o read_input.o domain.o setcoeff.o setbv.o exact.o setiv.o erhs.o ssor.o rhs.o l2norm.o jacld.o blts.o jacu.o buts.o error.o syncs.o pintgr.o verify.o ../common/print_results.o ../common/timers.o ../common/wtime.o 
+make[2]: Leaving directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-OMP/LU'
+make[1]: Leaving directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-OMP/LU'
+2
+1
+   ============================================
+   =      NAS PARALLEL BENCHMARKS 3.3         =
+   =      OpenMP Versions                     =
+   =      F77/C                               =
+   ============================================
+
+cd LU; make CLASS=A VERSION=
+make[1]: Entering directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-OMP/LU'
+make[2]: Entering directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-OMP/sys'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-OMP/sys'
+../sys/setparams lu A
+make[2]: Entering directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-OMP/LU'
+gfortran -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 -fopenmp lu.f
+gfortran -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 -fopenmp read_input.f
+gfortran -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 -fopenmp domain.f
+gfortran -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 -fopenmp setcoeff.f
+gfortran -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 -fopenmp setbv.f
+gfortran -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 -fopenmp exact.f
+gfortran -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 -fopenmp setiv.f
+gfortran -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 -fopenmp erhs.f
+gfortran -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 -fopenmp ssor.f
+gfortran -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 -fopenmp rhs.f
+gfortran -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 -fopenmp jacld.f
+gfortran -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 -fopenmp jacu.f
+gfortran -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 -fopenmp error.f
+gfortran -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 -fopenmp syncs.f
+gfortran -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 -fopenmp pintgr.f
+gfortran -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 -fopenmp verify.f
+gfortran -O3 -mfloat-abi=hard -mfpu=vfpv4 -fopenmp -o ../bin/lu.A.x lu.o read_input.o domain.o setcoeff.o setbv.o exact.o setiv.o erhs.o ssor.o rhs.o l2norm.o jacld.o blts.o jacu.o buts.o error.o syncs.o pintgr.o verify.o ../common/print_results.o ../common/timers.o ../common/wtime.o 
+make[2]: Leaving directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-OMP/LU'
+make[1]: Leaving directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-OMP/LU'
+2
+1
+   ============================================
+   =      NAS PARALLEL BENCHMARKS 3.3         =
+   =      OpenMP Versions                     =
+   =      F77/C                               =
+   ============================================
+
+cd LU; make CLASS=B VERSION=
+make[1]: Entering directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-OMP/LU'
+make[2]: Entering directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-OMP/sys'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-OMP/sys'
+../sys/setparams lu B
+make[2]: Entering directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-OMP/LU'
+gfortran -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 -fopenmp lu.f
+gfortran -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 -fopenmp read_input.f
+gfortran -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 -fopenmp domain.f
+gfortran -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 -fopenmp setcoeff.f
+gfortran -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 -fopenmp setbv.f
+gfortran -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 -fopenmp exact.f
+gfortran -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 -fopenmp setiv.f
+gfortran -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 -fopenmp erhs.f
+gfortran -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 -fopenmp ssor.f
+gfortran -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 -fopenmp rhs.f
+gfortran -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 -fopenmp jacld.f
+gfortran -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 -fopenmp jacu.f
+gfortran -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 -fopenmp error.f
+gfortran -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 -fopenmp syncs.f
+gfortran -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 -fopenmp pintgr.f
+gfortran -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 -fopenmp verify.f
+gfortran -O3 -mfloat-abi=hard -mfpu=vfpv4 -fopenmp -o ../bin/lu.B.x lu.o read_input.o domain.o setcoeff.o setbv.o exact.o setiv.o erhs.o ssor.o rhs.o l2norm.o jacld.o blts.o jacu.o buts.o error.o syncs.o pintgr.o verify.o ../common/print_results.o ../common/timers.o ../common/wtime.o 
+make[2]: Leaving directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-OMP/LU'
+make[1]: Leaving directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-OMP/LU'
+2
+1
+   ============================================
+   =      NAS PARALLEL BENCHMARKS 3.3         =
+   =      OpenMP Versions                     =
+   =      F77/C                               =
+   ============================================
+
+cd LU; make CLASS=C VERSION=
+make[1]: Entering directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-OMP/LU'
+make[2]: Entering directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-OMP/sys'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-OMP/sys'
+../sys/setparams lu C
+make[2]: Entering directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-OMP/LU'
+gfortran -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 -fopenmp lu.f
+gfortran -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 -fopenmp read_input.f
+gfortran -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 -fopenmp domain.f
+gfortran -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 -fopenmp setcoeff.f
+gfortran -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 -fopenmp setbv.f
+gfortran -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 -fopenmp exact.f
+gfortran -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 -fopenmp setiv.f
+gfortran -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 -fopenmp erhs.f
+gfortran -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 -fopenmp ssor.f
+gfortran -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 -fopenmp rhs.f
+gfortran -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 -fopenmp jacld.f
+gfortran -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 -fopenmp jacu.f
+gfortran -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 -fopenmp error.f
+gfortran -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 -fopenmp syncs.f
+gfortran -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 -fopenmp pintgr.f
+gfortran -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 -fopenmp verify.f
+gfortran -O3 -mfloat-abi=hard -mfpu=vfpv4 -fopenmp -o ../bin/lu.C.x lu.o read_input.o domain.o setcoeff.o setbv.o exact.o setiv.o erhs.o ssor.o rhs.o l2norm.o jacld.o blts.o jacu.o buts.o error.o syncs.o pintgr.o verify.o ../common/print_results.o ../common/timers.o ../common/wtime.o 
+make[2]: Leaving directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-OMP/LU'
+make[1]: Leaving directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-OMP/LU'
+2
+1
+   ============================================
+   =      NAS PARALLEL BENCHMARKS 3.3         =
+   =      OpenMP Versions                     =
+   =      F77/C                               =
+   ============================================
+
+cd LU; make CLASS=D VERSION=
+make[1]: Entering directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-OMP/LU'
+make[2]: Entering directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-OMP/sys'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-OMP/sys'
+../sys/setparams lu D
+make[2]: Entering directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-OMP/LU'
+gfortran -c  -O3 -mfloat-abi=hard -mfpu=vfpv4 -fopenmp lu.f
+Makefile:41: recipe for target 'lu.o' failed
+make[2]: Leaving directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-OMP/LU'
+Makefile:29: recipe for target '../bin/lu.D.x' failed
+make[1]: Leaving directory '/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-OMP/LU'
+Makefile:19: recipe for target 'lu' failed
+2
