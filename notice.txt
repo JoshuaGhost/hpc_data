@@ -1,0 +1,391 @@
+CG 
+ Compile options:
+    MPIF77       = mpif77.mpich
+    FLINK        = $(MPIF77)
+    FMPI_LIB     = -lmpi
+    FMPI_INC     = (none)
+    FFLAGS       = -O3 -mfloat-abi=hard -mfpu=vfpv4
+    FLINKFLAGS   = -O3 -mfloat-abi=hard -mfpu=vfpv4
+    RAND         = randi8
+
+class A
+ Size: 14000
+ Iterations: 15
+ Number of active process(es): 1,2,4,8
+ Number of nonzeros per row: 11
+   
+ core num = 4:
+ Class           =                        A
+ Size            =                    14000
+ Iterations      =                       15
+ Time in seconds =                     3.03
+ Total processes =                        4
+ Compiled procs  =                        4
+ Mop/s total     =                   494.66
+ Mop/s/process   =                   123.67
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.3.1
+ Compile date    =              26 May 2016
+    
+class B
+ Size:      75000
+ Iterations:    75
+ Number of active processes:     1,2,4,8
+ Number of nonzeroes per row:       13
+
+ core num = 4:
+ Class           =                        B
+ Size            =                    75000
+ Iterations      =                       75
+ Time in seconds =                   208.46
+ Total processes =                        4
+ Compiled procs  =                        4
+ Mop/s total     =                   262.44
+ Mop/s/process   =                    65.61
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.3.1
+ Compile date    =              26 May 2016
+    
+=================================================================
+lu class A:
+ NAS Parallel Benchmarks 3.3 -- LU Benchmark
+
+ Size:   64x  64x  64
+ Iterations:  250
+ Number of processes:     4
+
+ Time step    1
+ Time step   20
+ Time step   40
+ Time step   60
+ Time step   80
+ Time step  100
+ Time step  120
+ Time step  140
+ Time step  160
+ Time step  180
+ Time step  200
+ Time step  220
+ Time step  240
+ Time step  250
+
+ Verification being performed for class A
+ Accuracy setting for epsilon =  0.1000000000000E-07
+ Comparison of RMS-norms of residual
+           1   0.7790210760669E+03 0.7790210760669E+03 0.1430167994038E-13
+           2   0.6340276525969E+02 0.6340276525969E+02 0.3474111060983E-14
+           3   0.1949924972729E+03 0.1949924972729E+03 0.1224366899006E-13
+           4   0.1784530116042E+03 0.1784530116042E+03 0.7963359422996E-15
+           5   0.1838476034946E+04 0.1838476034946E+04 0.1224383317541E-13
+ Comparison of RMS-norms of solution error
+           1   0.2996408568547E+02 0.2996408568547E+02 0.1185657295234E-15
+           2   0.2819457636500E+01 0.2819457636500E+01 0.1338824259978E-13
+           3   0.7347341269878E+01 0.7347341269877E+01 0.6165100781478E-14
+           4   0.6713922568778E+01 0.6713922568778E+01 0.5291561888607E-15
+           5   0.7071531568839E+02 0.7071531568839E+02 0.1024889139531E-13
+ Comparison of surface integral
+               0.2603092560489E+02 0.2603092560489E+02 0.2729609951429E-15
+ Verification Successful
+
+
+ LU Benchmark Completed.
+ Class           =                        A
+ Size            =             64x  64x  64
+ Iterations      =                      250
+ Time in seconds =                    88.86
+ Total processes =                        4
+ Compiled procs  =                        4
+ Mop/s total     =                  1342.49
+ Mop/s/process   =                   335.62
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.3.1
+ Compile date    =              26 May 2016
+
+ Compile options:
+    MPIF77       = mpif77.mpich
+    FLINK        = $(MPIF77)
+    FMPI_LIB     = -lmpi
+    FMPI_INC     = (none)
+    FFLAGS       = -O3 -mfloat-abi=hard -mfpu=vfpv4
+    FLINKFLAGS   = -O3 -mfloat-abi=hard -mfpu=vfpv4
+    RAND         = (none)
+
+
+ Please send feedbacks and/or the results of this run to:
+
+ NPB Development Team 
+ Internet: npb@nas.nasa.gov
+
+lu class B:
+
+ NAS Parallel Benchmarks 3.3 -- LU Benchmark
+
+ Size:  102x 102x 102
+ Iterations:  250
+ Number of processes:     4
+
+ Time step    1
+ Time step   20
+ Time step   40
+ Time step   60
+ Time step   80
+ Time step  100
+ Time step  120
+ Time step  140
+ Time step  160
+ Time step  180
+ Time step  200
+ Time step  220
+ Time step  240
+ Time step  250
+
+ Verification being performed for class B
+ Accuracy setting for epsilon =  0.1000000000000E-07
+ Comparison of RMS-norms of residual
+           1   0.3553267296998E+04 0.3553267296998E+04 0.4223341878032E-14
+           2   0.2621475079531E+03 0.2621475079531E+03 0.7806151181705E-14
+           3   0.8833372185095E+03 0.8833372185095E+03 0.2574030287401E-14
+           4   0.7781277473943E+03 0.7781277473943E+03 0.1607133557601E-14
+           5   0.7308796959255E+04 0.7308796959255E+04 0.1493260311118E-14
+ Comparison of RMS-norms of solution error
+           1   0.1140117638021E+03 0.1140117638021E+03 0.1371081339804E-14
+           2   0.8109896365542E+01 0.8109896365542E+01 0.1577057050695E-13
+           3   0.2848059731770E+02 0.2848059731770E+02 0.6736043367181E-14
+           4   0.2590539456783E+02 0.2590539456783E+02 0.2194269564664E-14
+           5   0.2605490750486E+03 0.2605490750486E+03 0.2618013616830E-14
+ Comparison of surface integral
+               0.4788716270331E+02 0.4788716270331E+02 0.8902712488886E-15
+ Verification Successful
+
+
+ LU Benchmark Completed.
+ Class           =                        B
+ Size            =            102x 102x 102
+ Iterations      =                      250
+ Time in seconds =                   432.40
+ Total processes =                        4
+ Compiled procs  =                        4
+ Mop/s total     =                  1153.61
+ Mop/s/process   =                   288.40
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.3.1
+ Compile date    =              26 May 2016
+
+ Compile options:
+    MPIF77       = mpif77.mpich
+    FLINK        = $(MPIF77)
+    FMPI_LIB     = -lmpi
+    FMPI_INC     = (none)
+    FFLAGS       = -O3 -mfloat-abi=hard -mfpu=vfpv4
+    FLINKFLAGS   = -O3 -mfloat-abi=hard -mfpu=vfpv4
+    RAND         = (none)
+
+
+ Please send feedbacks and/or the results of this run to:
+
+ NPB Development Team 
+ Internet: npb@nas.nasa.gov
+
+=================================================================
+lscpu:
+
+Architecture:          armv7l
+Byte Order:            Little Endian
+CPU(s):                8
+On-line CPU(s) list:   0-7
+Thread(s) per core:    1
+Core(s) per socket:    4
+Socket(s):             2
+Model name:            ARMv7 Processor rev 3 (v7l)
+CPU max MHz:           1400.0000
+CPU min MHz:           200.0000
+=================================================================
+cpufreq-info:
+
+analyzing CPU 0:
+  driver: exynos_cpufreq
+  CPUs which run at the same hardware frequency: 0 1 2 3
+  CPUs which need to have their frequency coordinated by software: 0 1 2 3
+  maximum transition latency: 100.0 us.
+  hardware limits: 200 MHz - 1.40 GHz
+  available cpufreq governors: interactive, conservative, ondemand, powersave, performance
+  current policy: frequency should be within 200 MHz and 1.40 GHz.
+                  The governor "performance" may decide which speed to use
+                  within this range.
+  current CPU frequency is 1.40 GHz.
+  cpufreq stats: 1.40 GHz:97.52%, 1.30 GHz:0.00%, 1.20 GHz:0.00%, 1.10 GHz:0.00%, 1000 MHz:0.00%, 900 MHz:0.00%, 800 MHz:0.00%, 700 MHz:0.00%, 600 MHz:0.00%, 500 MHz:0.00%, 400 MHz:0.00%, 300 MHz:0.01%, 200 MHz:2.47%  (9)
+analyzing CPU 1:
+  driver: exynos_cpufreq
+  CPUs which run at the same hardware frequency: 0 1 2 3
+  CPUs which need to have their frequency coordinated by software: 0 1 2 3
+  maximum transition latency: 100.0 us.
+  hardware limits: 200 MHz - 1.40 GHz
+  available cpufreq governors: interactive, conservative, ondemand, powersave, performance
+  current policy: frequency should be within 200 MHz and 1.40 GHz.
+                  The governor "performance" may decide which speed to use
+                  within this range.
+  current CPU frequency is 1.40 GHz.
+  cpufreq stats: 1.40 GHz:97.52%, 1.30 GHz:0.00%, 1.20 GHz:0.00%, 1.10 GHz:0.00%, 1000 MHz:0.00%, 900 MHz:0.00%, 800 MHz:0.00%, 700 MHz:0.00%, 600 MHz:0.00%, 500 MHz:0.00%, 400 MHz:0.00%, 300 MHz:0.01%, 200 MHz:2.47%  (9)
+analyzing CPU 2:
+  driver: exynos_cpufreq
+  CPUs which run at the same hardware frequency: 0 1 2 3
+  CPUs which need to have their frequency coordinated by software: 0 1 2 3
+  maximum transition latency: 100.0 us.
+  hardware limits: 200 MHz - 1.40 GHz
+  available cpufreq governors: interactive, conservative, ondemand, powersave, performance
+  current policy: frequency should be within 200 MHz and 1.40 GHz.
+                  The governor "performance" may decide which speed to use
+                  within this range.
+  current CPU frequency is 1.40 GHz.
+  cpufreq stats: 1.40 GHz:97.52%, 1.30 GHz:0.00%, 1.20 GHz:0.00%, 1.10 GHz:0.00%, 1000 MHz:0.00%, 900 MHz:0.00%, 800 MHz:0.00%, 700 MHz:0.00%, 600 MHz:0.00%, 500 MHz:0.00%, 400 MHz:0.00%, 300 MHz:0.01%, 200 MHz:2.47%  (9)
+analyzing CPU 3:
+  driver: exynos_cpufreq
+  CPUs which run at the same hardware frequency: 0 1 2 3
+  CPUs which need to have their frequency coordinated by software: 0 1 2 3
+  maximum transition latency: 100.0 us.
+  hardware limits: 200 MHz - 1.40 GHz
+  available cpufreq governors: interactive, conservative, ondemand, powersave, performance
+  current policy: frequency should be within 200 MHz and 1.40 GHz.
+                  The governor "performance" may decide which speed to use
+                  within this range.
+  current CPU frequency is 1.40 GHz.
+  cpufreq stats: 1.40 GHz:97.52%, 1.30 GHz:0.00%, 1.20 GHz:0.00%, 1.10 GHz:0.00%, 1000 MHz:0.00%, 900 MHz:0.00%, 800 MHz:0.00%, 700 MHz:0.00%, 600 MHz:0.00%, 500 MHz:0.00%, 400 MHz:0.00%, 300 MHz:0.01%, 200 MHz:2.47%  (9)
+analyzing CPU 4:
+  driver: exynos_cpufreq
+  CPUs which run at the same hardware frequency: 4 5 6 7
+  CPUs which need to have their frequency coordinated by software: 4 5 6 7
+  maximum transition latency: 100.0 us.
+  hardware limits: 200 MHz - 2.00 GHz
+  available cpufreq governors: interactive, conservative, ondemand, powersave, performance
+  current policy: frequency should be within 200 MHz and 2.00 GHz.
+                  The governor "performance" may decide which speed to use
+                  within this range.
+  current CPU frequency is 2.00 GHz.
+  cpufreq stats: 2.00 GHz:84.46%, 1.90 GHz:0.00%, 1.80 GHz:0.00%, 1.70 GHz:0.00%, 1.60 GHz:0.00%, 1.50 GHz:0.00%, 1.40 GHz:0.00%, 1.30 GHz:0.00%, 1.20 GHz:0.00%, 1.10 GHz:0.01%, 1000 MHz:0.00%, 900 MHz:13.06%, 800 MHz:0.00%, 700 MHz:0.01%, 600 MHz:0.00%, 500 MHz:0.00%, 400 MHz:0.00%, 300 MHz:0.00%, 200 MHz:2.44%  (14737)
+analyzing CPU 5:
+  driver: exynos_cpufreq
+  CPUs which run at the same hardware frequency: 4 5 6 7
+  CPUs which need to have their frequency coordinated by software: 4 5 6 7
+  maximum transition latency: 100.0 us.
+  hardware limits: 200 MHz - 2.00 GHz
+  available cpufreq governors: interactive, conservative, ondemand, powersave, performance
+  current policy: frequency should be within 200 MHz and 2.00 GHz.
+                  The governor "performance" may decide which speed to use
+                  within this range.
+  current CPU frequency is 2.00 GHz.
+  cpufreq stats: 2.00 GHz:84.46%, 1.90 GHz:0.00%, 1.80 GHz:0.00%, 1.70 GHz:0.00%, 1.60 GHz:0.00%, 1.50 GHz:0.00%, 1.40 GHz:0.00%, 1.30 GHz:0.00%, 1.20 GHz:0.00%, 1.10 GHz:0.01%, 1000 MHz:0.00%, 900 MHz:13.06%, 800 MHz:0.00%, 700 MHz:0.01%, 600 MHz:0.00%, 500 MHz:0.00%, 400 MHz:0.00%, 300 MHz:0.00%, 200 MHz:2.44%  (14737)
+analyzing CPU 6:
+  driver: exynos_cpufreq
+  CPUs which run at the same hardware frequency: 4 5 6 7
+  CPUs which need to have their frequency coordinated by software: 4 5 6 7
+  maximum transition latency: 100.0 us.
+  hardware limits: 200 MHz - 2.00 GHz
+  available cpufreq governors: interactive, conservative, ondemand, powersave, performance
+  current policy: frequency should be within 200 MHz and 2.00 GHz.
+                  The governor "performance" may decide which speed to use
+                  within this range.
+  current CPU frequency is 2.00 GHz.
+  cpufreq stats: 2.00 GHz:84.46%, 1.90 GHz:0.00%, 1.80 GHz:0.00%, 1.70 GHz:0.00%, 1.60 GHz:0.00%, 1.50 GHz:0.00%, 1.40 GHz:0.00%, 1.30 GHz:0.00%, 1.20 GHz:0.00%, 1.10 GHz:0.01%, 1000 MHz:0.00%, 900 MHz:13.06%, 800 MHz:0.00%, 700 MHz:0.01%, 600 MHz:0.00%, 500 MHz:0.00%, 400 MHz:0.00%, 300 MHz:0.00%, 200 MHz:2.44%  (14737)
+analyzing CPU 7:
+  driver: exynos_cpufreq
+  CPUs which run at the same hardware frequency: 4 5 6 7
+  CPUs which need to have their frequency coordinated by software: 4 5 6 7
+  maximum transition latency: 100.0 us.
+  hardware limits: 200 MHz - 2.00 GHz
+  available cpufreq governors: interactive, conservative, ondemand, powersave, performance
+  current policy: frequency should be within 200 MHz and 2.00 GHz.
+                  The governor "performance" may decide which speed to use
+                  within this range.
+  current CPU frequency is 2.00 GHz.
+  cpufreq stats: 2.00 GHz:84.46%, 1.90 GHz:0.00%, 1.80 GHz:0.00%, 1.70 GHz:0.00%, 1.60 GHz:0.00%, 1.50 GHz:0.00%, 1.40 GHz:0.00%, 1.30 GHz:0.00%, 1.20 GHz:0.00%, 1.10 GHz:0.01%, 1000 MHz:0.00%, 900 MHz:13.06%, 800 MHz:0.00%, 700 MHz:0.01%, 600 MHz:0.00%, 500 MHz:0.00%, 400 MHz:0.00%, 300 MHz:0.00%, 200 MHz:2.44%  (14737)
+==============================================================
+/proc/cpu:
+
+processor	: 0
+model name	: ARMv7 Processor rev 3 (v7l)
+BogoMIPS	: 84.00
+Features	: swp half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xc07
+CPU revision	: 3
+
+processor	: 1
+model name	: ARMv7 Processor rev 3 (v7l)
+BogoMIPS	: 84.00
+Features	: swp half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xc07
+CPU revision	: 3
+
+processor	: 2
+model name	: ARMv7 Processor rev 3 (v7l)
+BogoMIPS	: 84.00
+Features	: swp half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xc07
+CPU revision	: 3
+
+processor	: 3
+model name	: ARMv7 Processor rev 3 (v7l)
+BogoMIPS	: 84.00
+Features	: swp half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xc07
+CPU revision	: 3
+
+processor	: 4
+model name	: ARMv7 Processor rev 3 (v7l)
+BogoMIPS	: 120.00
+Features	: swp half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x2
+CPU part	: 0xc0f
+CPU revision	: 3
+
+processor	: 5
+model name	: ARMv7 Processor rev 3 (v7l)
+BogoMIPS	: 120.00
+Features	: swp half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x2
+CPU part	: 0xc0f
+CPU revision	: 3
+
+processor	: 6
+model name	: ARMv7 Processor rev 3 (v7l)
+BogoMIPS	: 120.00
+Features	: swp half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x2
+CPU part	: 0xc0f
+CPU revision	: 3
+
+processor	: 7
+model name	: ARMv7 Processor rev 3 (v7l)
+BogoMIPS	: 120.00
+Features	: swp half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x2
+CPU part	: 0xc0f
+CPU revision	: 3
+
+Hardware	: ODROID-XU3
+Revision	: 0100
+Serial		: 0000000000000000
+   
