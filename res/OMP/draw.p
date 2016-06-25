@@ -1,0 +1,1 @@
+/media/root/新加卷1/workspace/hpc_data/res/draw.p
