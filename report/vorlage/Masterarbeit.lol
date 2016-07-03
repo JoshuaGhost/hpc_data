@@ -1,1 +1,2 @@
-\contentsline {lstlisting}{\numberline {2.1}How to reach World domination}{3}{lstlisting.2.1}
+\contentsline {lstlisting}{\numberline {3.1}compile.py}{7}{lstlisting.3.1}
+\contentsline {lstlisting}{\numberline {3.2}meassure.sh}{8}{lstlisting.3.2}
