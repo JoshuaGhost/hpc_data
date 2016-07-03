@@ -1,0 +1,11 @@
+Schriftliche Ausarbeitung für Seminar Aspekte Verteilte Systeme
+
+1.Was ist HPC
+HPC(Auf Englisch High Performance Computing), oder Rechnen mit dem Hilfer von Superrechner, ist typischweise Supercomputer mit großen Anzahl der Prozessoren, die auf gemeisame Peripheriegeräte und eine teiweise gemeisamen Hauptspeicher zugreifen können, die die auf dem Wikipedia beschrieben werden. 
+2.Warum HPC
+Um die Lösung maßstabreicher Probleme zu finden. Diese Probleme hat dem Merkmal, dass sie auf viele homogenisierende Teilprobleme bestanden, zum Beispiel die auf dem Bereich Hydromechanik, Biologie oder atmosphärische Wissenschaften. Um das Rechnungsprozess zu beschleunigen, ist parallele Rechnung sehr hilfreich. Das ist auch der Grund dafür, warum Supercomputers werden von Institute alle Land immer noch untersucht.
+3.HPC und Energiebedarf
+Unter der gleichem Architechtur besitzt ein Supercomputer je mehr Prozessoren verbraucht es mehr Energie. Mit der Leistung von 93.000,00 TeraFLOPS beträgt der Energiebedarf von Sunway TaihuLight 15.370kW, was ist eigentlich zehr energieaufwändig. Aber dieser Zustand ist verbesserbar. Eine Seit durch den Fortschritten der Technik kann man die Architektur von Supercomputer monifizieren, um zum schluß die Energiebedarf per Prozessor zu senken, andere Seit ist die Softwareimpimentation auch verbesserbar. In diser Ausarbeitung biete ich ein paar Vergleichen an, der viele Energiebedarf-relevante Aspekte identifizieren.
+4.Energiebedarf-relevante Aspekte
+Die Energiebedarf eines Durchlaufs von einen Superrechnersystem ist von vielen Aspekte abhängig. Es kann sich veränderen mit den Aspekte inklusive, jedoch nicht begrenzt auf: Anzahr angewendeter Kerne, Typ und maßtab von tasks, Implementationsmethode und ist auch relevant mit thermische Energieverlust. Die folgende Versuche veranschaulichen diese Aspekte. Die Versuche finden auf Odroid-XU3 Einplatinen-Computer statt, das ein Cortex-A15 2.0Ghz quad core und ein Cortex-A7 quad core CPU besitzt. Außerdem für die Implementationsmethode haben wir OpenMP API und MPI(Message Passing Interface) angewendet. Die zuvergleichenden Task sind LU Dekomposition und Gausß'sche Elimination(LU) und konjugierender Gradient(CG)
+4.1
