@@ -119,20 +119,6 @@
 \@openrightfalse
 \makeatother
 
-% Hier kommt das Abbildungsverzeichnis.
-\listoffigures
-
-% Hier kommt eine Liste der Tabellen.
-\listoftables
-
-% Codeverzeichnis
-\renewcommand*{\lstlistlistingname}{Codeverzeichniss}
-\lstlistoflistings
-
-\printnoidxglossaries
-
-%\printglossary[title=Nomenclature]
-
 \mainmatter
 \renewcommand{\headrulewidth}{0.4pt}
 \fancyhead[OR]{\fontfamily{phv}\selectfont \rightmark}
@@ -146,7 +132,7 @@
 %% binden sie hier Ihre anderen LaTeX Dateien ein.
 \input{content/1_hpc}
 \input{content/2_versuch}
-\input{content/4_code}
+\input{content/3_rueckschluss_und_ergaenzungen}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -157,7 +143,7 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ANHÄNGE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% binden sie hier Ihre LaTeX Dateien ein, welche zum Anhang gehören.
-
+\input{content/4_code}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \bibliographystyle{plain}

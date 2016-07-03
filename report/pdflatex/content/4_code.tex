@@ -1,0 +1,273 @@
+\chapter{Codes}
+\label{chap:Codes}
+
+In disem Kapitel werden alle automatisierte Skripte (zu kompilieren und messen, beziehungsweise für die Abbildungsherstellung) dargestellt
+
+\begin{lstlisting}[label=lst:compile.py, caption={compile.py}]
+import os
+
+result_dir = "~/res"
+base_dir = "~/LAB/NAS/"
+ver_dir= "NPB3.3.1/"
+ver_short = "NPB3.3"
+impls= ["MPI", "OMP"]
+
+benchmark_names = ["CG", "LU"]
+class_names = ["S", "W", "A", "B", "C", "D"]
+
+for impl in impls:
+     cp_command = "cp "+base_dir+impl+"/make.def "+
+     			  base_dir+ver_dir+ver_short+
+     			  	"-"+impl+"/config/"
+
+     os.system(cp_command)
+
+     for bn in benchmark_names:
+         for cn in class_names:
+             for core_num in [1,2,4,8]:
+                 make_command = "cd "+base_dir+ver_dir+
+                                ver_short+"-"+impl+
+                                "/;make "+bn
+
+                 if impl == "MPI":
+                     make_command+=" NPROCS="+
+                                   str(core_num)
+
+                 elif core_num>1:
+                     break
+
+                 make_command += " CLASS="+cn
+                 os.system(make_command)
+\end{lstlisting}
+
+\begin{lstlisting}[label=lst:meassure.sh, caption={meassure.sh}]
+#!/bin/bash
+
+res_dir="/home/user5/res/"
+if [ ! -f $resultdir ];
+then
+ mkdir -p $resultdir
+fi
+
+basedir="/home/user5/LAB/NAS/"
+verdir="NPB3.3.1/"
+vershort="NPB3.3"
+
+impls="MPI OMP"
+benchmark_names="cg lu"
+class_names="A B"
+
+core_nums="1 2 4 8"
+
+mes_sensor="stdbuf -oL read-xu3-sensors -c -t"
+mes_power="stdbuf -oL smartpower -c -t"
+
+for impl in $impls;
+do
+ for bn in $benchmark_names;
+ do
+  for cn in $class_names;
+  do
+   for core_num in $core_nums;
+   do
+    res_folder=$res_dir"/"$impl"/"
+    
+    if [ ! -f $res_folder ];
+    then
+     mkdir -p $res_folder
+    fi
+    
+    sensor_res_filename=$res_folder$bn"."\
+                        $cn"."$core_num\
+                        ".sensor.txt"
+    power_res_filename=$res_folder$bn"."\
+                       $cn"."$core_num\
+                       ".power.txt"
+    
+    if [ -e $sensor_res_filename ] && 
+       [ `wc -l $sensor_res_filename | 
+         cut -f 1 --delimiter=" "` != "0" ] && 
+       [ -e $power_res_filename ] &&
+       [ `wc -l $power_res_filename | 
+         cut -f 1 --delimiter=" "` != "0" ];
+    then
+     continue
+    fi
+    
+    ($mes_sensor)>$sensor_res_filename& 
+    pid_mes_sensor=$!
+    ($mes_power)>$power_res_filename&
+    pid_mes_power=$!
+
+    sleep 10 
+    
+    cd "/home/user5/LAB/NAS/NPB3.3.1/NPB3.3-"$impl"/bin"
+    if [ $impl == "MPI" ];
+    then
+     run_cmd="mpirun.mpich -np $core_num ./"\
+             $bn"."$cn"."$core_num
+    else
+     export OMP_NUM_THREADS=$core_num
+     run_cmd="./"$bn"."$cn".x"
+    fi
+    
+    ($run_cmd)
+    sleep 10
+    
+    kill $pid_mes_sensor
+    kill $pid_mes_power
+    
+    sync
+    sleep 2
+   done
+  done
+done
+done
+\end{lstlisting}
+
+\begin{lstlisting}[label=lst:draw.p, caption={draw.p}]
+set term png
+unset log
+unset label
+set xtic auto
+set ytic auto
+set datafile separator ","
+set key right top
+
+set title "Power consumption of Odroid-XU3 device by\
+          task lu of class B (MPI)"
+set xlabel "Timestamp (s)"
+set ylabel "Power (Watt)"
+set output "cores_power.png"
+plot\
+    "MPI/lu.B.1.power.txt" u 0:3 t "1 core" with line,\
+    "MPI/lu.B.2.power.txt" u 0:3 t "2 cores" with line,\
+    "MPI/lu.B.4.power.txt" u 0:3 t "4 cores" with line,\
+    "MPI/lu.B.8.power.txt" u 0:3 t "8 cores" with line;
+
+
+set title "Power consumption of critical units by task\
+          lu of class B with 8 cores (MPI)"
+set output "units_power.png"
+plot\
+    "MPI/lu.B.8.sensor.txt" u 0:4 t "A7_Watt" with line,\
+    "MPI/lu.B.8.sensor.txt" u 0:7 t "A15_Watt" with line,\
+    "MPI/lu.B.8.sensor.txt" u 0:10 t "GPU_Watt" with line,\
+    "MPI/lu.B.8.sensor.txt" u 0:13 t "Mem_Watt" with line
+
+
+set title "Power consumption of Odroid-XU3 device by\
+          different tasks (MPI)"
+set output "tasks_power.png"
+plot\
+    "MPI/lu.B.8.power.txt" u 0:3 t "lu_8_cores" with line,\
+    "MPI/lu.B.4.power.txt" u 0:3 t "lu_4_cores" with line,\
+    "MPI/cg.B.8.power.txt" u 0:3 t "cg_8_cores" with line,\
+    "MPI/cg.B.4.power.txt" u 0:3 t "cg_4_cores" with line;
+
+
+set title "Power consumption of Odroid-XU3 device by\
+          task lu of different scales (MPI)"
+set output "scales_power.png"
+plot\
+    "MPI/lu.B.8.power.txt" u 0:3 t "B_8_cores" with line,\
+    "MPI/lu.B.4.power.txt" u 0:3 t "B_4_cores" with line,\
+    "MPI/lu.A.8.power.txt" u 0:3 t "A_8_cores" with line,\
+    "MPI/lu.A.4.power.txt" u 0:3 t "A_4_cores" with line;
+    
+
+set title "Power consumption of Odroid-XU3 device by\
+          task lu of class B with different implementations"
+set output "implementations_power.png"
+plot\
+    "MPI/lu.B.8.power.txt" u 0:3 t "MPI_8_cores" with line,\
+    "MPI/lu.B.4.power.txt" u 0:3 t "MPI_4_cores" with line,\
+    "OMP/lu.B.8.power.txt" u 0:3 t "OpenMP_8_cores"\
+     with line,\
+    "OMP/lu.B.4.power.txt" u 0:3 t "OpenMP_4_cores"\
+     with line;
+
+
+
+set key right bottom
+set xlabel "Timestamp (s)"
+set ylabel "Energy (W*s)"
+set title "Energy consumption of Odroid-XU3 device by task\
+          of class B (MPI)"
+sum1=0; sum2=0; sum4=0;sum8=0;
+set output "cores_energy.png"
+plot\
+    "MPI/lu.B.1.power.txt" u 0:(sum1=sum1+$3) t "1 core"\
+     with line,\
+    "MPI/lu.B.2.power.txt" u 0:(sum2=sum2+$3) t "2 cores"\
+     with line,\
+    "MPI/lu.B.4.power.txt" u 0:(sum4=sum4+$3) t "4 cores"\
+     with line,\
+    "MPI/lu.B.8.power.txt" u 0:(sum8=sum8+$3) t "8 cores"\
+     with line;
+
+
+set title "Energy consumption of Odroid-XU3 device by\
+          different tasks (MPI)"
+sum1=0; sum2=0; sum4=0;sum8=0;
+set output "tasks_energy.png"
+plot\
+    "MPI/lu.B.8.power.txt" u 0:(sum2=sum2+$3)\
+     t "lu_8_cores",\
+    "MPI/lu.B.4.power.txt" u 0:(sum1=sum1+$3)\
+     t "lu_4_cores",\
+    "MPI/cg.B.8.power.txt" u 0:(sum8=sum8+$3)\
+     t "cg_8_cores",\
+    "MPI/cg.B.4.power.txt" u 0:(sum4=sum4+$3)\
+     t "cg_4_cores";
+
+
+set title "Energy consumption of Odroid-XU3 device by\
+          task lu of different scales (MPI)"
+sum1=0; sum2=0; sum4=0;sum8=0;
+set output "scales_energy.png"
+plot\
+    "MPI/lu.B.8.power.txt" u 0:(sum8=sum8+$3) t "B_8_cores",\
+    "MPI/lu.B.4.power.txt" u 0:(sum4=sum4+$3) t "B_4_cores",\
+    "MPI/lu.A.8.power.txt" u 0:(sum2=sum2+$3) t "A_8_cores",\
+    "MPI/lu.A.4.power.txt" u 0:(sum1=sum1+$3) t "A_4_cores";
+    
+
+set title "Energy consumption of Odroid-XU3 device by\
+          task lu of class B with different implementations"
+sum1=0; sum2=0; sum4=0;sum8=0;
+set output "implementations_energy.png"
+plot\
+    "MPI/lu.B.8.power.txt" u 0:(sum8=sum8+$3)\
+     t "MPI_8_cores",\
+    "MPI/lu.B.4.power.txt" u 0:(sum4=sum4+$3)\
+     t "MPI_4_cores",\
+    "OMP/lu.B.8.power.txt" u 0:(sum2=sum2+$3)\
+     t "OpenMP_8_cores",\
+    "OMP/lu.B.4.power.txt" u 0:(sum1=sum1+$3)\
+     t "OpenMP_4_cores";
+
+
+set title "Processing units' temperature monitoring on\
+          running lu class B with 8 cores (MPI)"
+set xlabel "Timestamp (s)"
+set ylabel "Temperature (Celsius Degree)"
+set output "mpi_temp.png"
+plot\
+    "MPI/lu.B.8.sensor.txt" u 0:23 t "CPU4_Temp" with line,\
+    "MPI/lu.B.8.sensor.txt" u 0:24 t "CPU5_Temp" with line,\
+    "MPI/lu.B.8.sensor.txt" u 0:25 t "CPU6_Temp" with line,\
+    "MPI/lu.B.8.sensor.txt" u 0:26 t "CPU7_Temp" with line,\
+    "MPI/lu.B.8.sensor.txt" u 0:26 t "GPU_Temp" with line;
+
+
+set title "Processing units' temperature monitoring on\
+          running lu class B with 8 cores (OpenMP)"
+set output "openmp_temp.png"
+plot\
+    "OMP/lu.B.8.sensor.txt" u 0:23 t "CPU4_Temp" with line,\
+    "OMP/lu.B.8.sensor.txt" u 0:24 t "CPU5_Temp" with line,\
+    "OMP/lu.B.8.sensor.txt" u 0:25 t "CPU6_Temp" with line,\
+    "OMP/lu.B.8.sensor.txt" u 0:26 t "CPU7_Temp" with line,\
+    "OMP/lu.B.8.sensor.txt" u 0:26 t "GPU_Temp" with line;
+\end{lstlisting}
